@@ -1,4 +1,4 @@
-# NeuroToolbox
+# Surface-Based Geometric Analysis Toolbox
 
 This is a Python toolbox for the surface-based analysis of topographic numerosity maps on the cortical surface.
 
