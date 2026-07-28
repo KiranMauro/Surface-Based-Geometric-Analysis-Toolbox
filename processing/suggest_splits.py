@@ -72,7 +72,7 @@ def run(project):
         if np.any(np.isnan(v2)):
             return 0.0
 
-        c = np.clipnp.dot(v1, v2), -1.0, 1.0
+        c = np.clip(np.dot(v1, v2)), -1.0, 1.0
 
         return abs(c)
 
@@ -216,7 +216,7 @@ def run(project):
     
     # MAIN LOOP
     n_suggestions = 0
-    for cluster in [clusters[6]]:
+    for cluster in clusters:
         print(f"Cluster {cluster.id}")
 
         if cluster.hemi == "lh":
